@@ -1,0 +1,701 @@
+/*--------------GENERAL SETTINGS START---------------*/
+
+body {
+    margin: 0;
+    background-color: white;
+
+}
+
+h1 {
+    color: black;
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #F2F2F2;
+    font-size: 1.5em;
+    font-family: 'Julius Sans One', sans-serif;
+    padding: 0px 20px 0px 20px;
+    margin:
+}
+
+h3 {
+    color: #F2F2F2;
+    cursor: pointer;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+p {
+    color: #F2F2F2;
+    margin-top: -17px;
+    font-size: 1.1em;
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform: lowercase;
+    padding: 0px 20px 0px 20px;
+
+}
+
+
+.footer {
+    color: #F2F2F2;
+    background-color: #2D5F73;
+    font-size: 0.8em;
+}
+
+/*--------------GENERAL SETTINGS SLUT---------------*/
+
+/*----------------- FORSIDE ------------------*/
+
+/*------------ forside, cv, portfolio slut----------*/
+
+/*
+#splash,
+#cv,
+#portfolio {
+    max-width: 1800px;
+    KONTROLLERER MAX BREDDE PÅ DINE SECTIONS
+    margin: 0 auto;
+    text-align: center;
+}
+*/
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Julius Sans One', sans-serif;
+
+}
+
+a:hover {
+    color: black;
+}
+
+
+/*------------ forside, cv, portfolio slut----------*/
+
+/*--------------LOGO START---------------*/
+
+#logo .ikon img {
+    width: 100%;
+}
+
+#logo .ikon {
+    margin: 5px 5px;
+    padding: 16px;
+    width: 8.5vw;
+    box-sizing: content-box;
+    position: absolute;
+    top: 1%;
+}
+
+/*--------------LOGO SLUT---------------*/
+
+/*--------------DROPDOWN MENU START---------------*/
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #F2F2F2;
+}
+
+#menuToggle {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 1;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    right: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #000;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+    box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    position: absolute;
+    width: 250px;
+    height: inherit;
+    margin: -100px 0 0 -280px;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: #929095;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 5px 0;
+    font-size: 22px;
+    font-family: 'Julius Sans One', sans-serif;
+    padding: 10px;
+}
+
+#menuToggle input:checked ~ ul {
+    transform: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*--------------DROPDOWN MENU SLUT---------------*/
+
+/*--------------OVERSKRIFT START---------------*/
+
+#overskrift {
+    margin: 0;
+    text-align: center;
+
+}
+
+/*--------------OVERSKRIFT SLUT---------------*/
+
+/*--------------UNDEROVERSKRIFT START---------------*/
+
+#underoverskrift h1 {
+    margin: 5px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    text-transform: inherit;
+    font-size: 300%;
+}
+
+/*--------------UNDEROVERSKRIFT SLUT---------------*/
+
+/*--------------FORSIDE START---------------*/
+
+#sectionwrapper_forside img {
+    width: 100%;
+    height: 100%;
+}
+
+#sectionwrapper_forside h1 {
+    color: #F2F2F2;
+    text-align: center;
+}
+
+sectionwrapper_forside p {
+    color: white;
+}
+
+#sectionwrapper_forside {
+    background-color: darkgrey;
+    padding: 5px 0px 5px 0px;
+}
+
+.column_fordide h2 {
+    color: white;
+    text-align: center;
+}
+
+.column_fordide p {
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
+
+/*----------------- FORSIDE SLUT------------------*/
+
+/*----------------- CV - OM MIG ------------------*/
+
+/*--------------OM MIG START---------------*/
+
+#om_mig_map img {
+    width: 35%;
+    height: 35%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+#om_mig_map h1 {
+    color: #F2F2F2;
+    text-align: center;
+}
+
+#om_mig_map {
+    background-color: darkgrey;
+    padding: 5px 0px 5px 0px;
+}
+
+#om_mig_map h3 {
+    text-align: center;
+    font-size: 1.2em
+}
+
+
+.column_tekstommig h2 {
+    color: black;
+    text-align: center;
+}
+
+.column_tekstommig p {
+    color: black;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+
+
+}
+
+
+
+/*-----TEKST OM MIG START-----*/
+
+#sectionwrapper_tekst h2 {
+    color: black;
+    padding: 0px 0px 5px 0px;
+}
+
+#sectionwrapper_tekst .column {
+    text-align: center;
+    font-size: 1.2em
+}
+
+#sectionwrapper_tekst h2 {
+    padding: 1vw;
+    color: black;
+}
+
+#sectionwrapper_tekst p {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+/*----------------- CV - OM MIG slut ------------------*/
+
+/*----------PORTFOLIO-----------*/
+
+#portfolio_map img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+#portfolio_map h1 {
+    color: black;
+    text-align: center;
+}
+
+#portfolio_map {
+    padding: 5px 0px 5px 0px;
+
+
+}
+
+#portfolio_map h3 {
+    text-align: center;
+    font-size: 1.2em
+}
+
+#portfolio_map h2 {
+    padding: 1vw;
+    color: black;
+}
+
+#portfolio_map p {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+/*---------------------PORTFOLIO OVERSIGT - TEMAER-----------*/
+
+#sectionwrapper {
+    padding: 5px 0px 5px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sectionwrapper img {
+    width: 80%;
+    height: 80%%;
+    display: block;
+    margin: 0 auto;
+}
+
+#sectionwrapper h1 {
+    color: black;
+    text-align: center;
+}
+
+#sectionwrapper h3 {
+    text-align: center;
+    font-size: 1.2em
+}
+
+#sectionwrapper h2 {
+    /*    padding: 1vw;*/
+    color: black;
+}
+
+#sectionwrapper p {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+#sectionwrapper a {
+    color: red;
+}
+
+.column_html {
+    justify-content: space-between;
+    flex-basis: 300px;
+    flex-grow: 1;
+    width: 10px;
+
+}
+
+.column_video {
+    justify-content: space-between;
+    flex-basis: 300px;
+    flex-grow: 1;
+    width: 10px;
+}
+
+.column_animation {
+    justify-content: space-between;
+    flex-basis: 300px;
+    flex-grow: 1;
+    width: 10px;
+}
+
+.column_ux {
+    justify-content: space-between;
+    flex-basis: 300px;
+    flex-grow: 1;
+    width: 10px;
+
+}
+
+
+
+
+
+
+/*-------------------CV --------------------*/
+
+#cv img {
+    width: 80%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#cv h1 {
+    color: white;
+    text-align: center;
+    padding: 1em;
+    padding: 20px 0px 25px 0px;
+    font-size: 2em;
+    border-bottom: solid grey 1.5px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+#cv h3 {
+    /*    text-align: center;*/
+    font-size: 1.2em;
+    padding: 0em 1em;
+}
+
+#cv h2 {
+    /*    padding: 1vw;*/
+    color: white;
+    text-align: center;
+}
+
+#cv p {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    line-height: 1.5em
+}
+
+#cv {
+    background-color: darkgray;
+}
+
+#sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column_cv {
+    justify-content: space-between;
+    flex-basis: 300px;
+    flex-grow: 1;
+    width: 10px;
+
+}
+
+/*------------- tema 1 - gr html-----------*/
+
+#sectionwrapper_tema_et img {
+    width: 100%;
+    height: 100%;
+}
+
+#sectionwrapper_tema_et h1 {
+    color: #F2F2F2;
+    text-align: center;
+}
+
+#sectionwrapper_tema_et {
+    background-color: darkgrey;
+    padding: 5px 0px 5px 0px;
+}
+
+
+#sectionwrapper_tema_et a {
+    color: red;
+}
+
+
+
+/*----------------tema 2 - animation-------------*/
+
+.column_sex img {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.column_sex h1 {
+    text-align: center;
+    margin: 5vw;
+}
+
+.column_sex p {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+.column_sex h2 {
+    color: black;
+
+}
+
+.column_sex a {
+    color: red;
+}
+
+
+
+#animation_map {
+    background-color: darkgray;
+
+}
+
+#animation_map h1 {
+    text-align: center;
+    padding: 1vw;
+}
+
+#animation_map h2 {
+    text-align: center;
+    padding: 1vw;
+    ;
+}
+
+
+/*----------------tema 2 slut -------------*/
+
+/*-----------------tema 3 start------------------*/
+
+/*------------- tema 3 - gr video-----------*/
+
+#sectionwrapper_tre {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: darkgrey;
+    padding: 1vw 0vw 1vw 0vw;
+}
+
+#sectionwrapper_tre p {
+    font-family: 'Raleway', sans-serif;
+}
+
+#sectionwrapper_tre h3 {
+    padding: 0vw 2.5vw;
+}
+
+
+#sectionwrapper_tre h1 {
+    color: #F2F2F2;
+    text-align: center;
+}
+
+
+#sectionwrapper_tre .column_pilot iframe {
+    width: 80vw;
+    height: 45vw;
+    display: block;
+    margin: 0 auto;
+    border: 0;
+}
+
+
+#sectionwrapper_tre .column_dox {
+    background-color: white;
+    padding: 1vw;
+}
+
+
+#sectionwrapper_tre a {
+    color: red;
+}
+
+
+.column_dox h2 {
+    color: black;
+}
+
+.column_dox p {
+    color: black;
+}
+
+.column_dox_video iframe {
+    width: 80vw;
+    height: 45vw;
+    display: block;
+    margin: 0 auto;
+    border: 0;
+}
+
+.column_pilot {
+    justify-content: space-between;
+    flex-basis: 300px;
+    flex-grow: 1;
+    width: 10px;
+}
+
+.column_dox {
+    justify-content: space-between;
+    flex-basis: 300px;
+    flex-grow: 1;
+    width: 10px;
+}
+
+
+.video_dox {
+    display: block;
+    margin: 0 auto;
+
+}
+
+.video {
+    display: block;
+    margin: 0 auto;
+
+}
+
+/*-----------------tema 3 slut------------------*/
+
+/*--------------tema 4------------*/
+
+#sectionwrapper keapp {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column_praesentation {
+    justify-content: space-between;
+    flex-basis: 300px;
+    flex-grow: 1;
+    width: 10px;
+}
+
+.column_dokumentation {
+    justify-content: space-between;
+    flex-basis: 300px;
+    flex-grow: 1;
+    width: 10px;
+}
+
+
+.sectionwrapper {
+    background-color: darkgray;
+}
+
+.sectionwrapper h1 {
+    text-align: center;
+    color: white;
+    padding: 2vw;
+}
+
+.sectionwrapper h2 {
+    text-align: center;
+    color: white;
+    padding: 2vw;
+}
+
+
+h1 {
+    text-align: center;
+}
