@@ -17,7 +17,6 @@ h2 {
     font-size: 1.5em;
     font-family: 'Julius Sans One', sans-serif;
     padding: 0px 20px 0px 20px;
-    margin:
 }
 
 h3 {
@@ -33,32 +32,35 @@ p {
     font-family: 'Julius Sans One', sans-serif;
     text-transform: lowercase;
     padding: 0px 20px 0px 20px;
+    text-transform: inherit;
+
 
 }
 
 
-.footer {
+footer {
     color: #F2F2F2;
-    background-color: #2D5F73;
+    background-color: darkgray;
     font-size: 0.8em;
+    font-family: 'Julius Sans One', sans-serif;
+    margin: 1.5px 0px;
 }
+
+footer a {
+    color: red;
+}
+
+footer p {
+    padding: 5px 20px 5px 20px;
+    ;
+}
+
 
 /*--------------GENERAL SETTINGS SLUT---------------*/
 
 /*----------------- FORSIDE ------------------*/
 
 /*------------ forside, cv, portfolio slut----------*/
-
-/*
-#splash,
-#cv,
-#portfolio {
-    max-width: 1800px;
-    KONTROLLERER MAX BREDDE PÅ DINE SECTIONS
-    margin: 0 auto;
-    text-align: center;
-}
-*/
 
 a {
     text-decoration: none;
@@ -70,6 +72,8 @@ a {
 a:hover {
     color: black;
 }
+
+
 
 
 /*------------ forside, cv, portfolio slut----------*/
@@ -224,18 +228,19 @@ li {
 
 /*--------------FORSIDE START---------------*/
 
-#sectionwrapper_forside img {
+.column_fordide img {
     width: 100%;
     height: 100%;
 }
 
-#sectionwrapper_forside h1 {
+.column_fordide h1 {
     color: #F2F2F2;
     text-align: center;
 }
 
 sectionwrapper_forside p {
     color: white;
+    text-transform: inherit;
 }
 
 #sectionwrapper_forside {
@@ -252,10 +257,37 @@ sectionwrapper_forside p {
     color: white;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-
+    text-transform: inherit;
+    line-height: 1.5em;
 }
 
+.column_forside {
+    background-color: white;
+    text-align: center;
+}
 
+.column_forside h1 {
+    padding: 2vw 0vw 1.5vw 0vw;
+    border-bottom: solid grey 1.5px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.column_forside h2 {
+    color: black;
+}
+
+.column_forside p {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+}
+
+.column_forside img {
+    width: 80%;
+    height: 80%;
+    margin: 2px 2px 20px 2px;
+}
 
 /*----------------- FORSIDE SLUT------------------*/
 
@@ -268,7 +300,6 @@ sectionwrapper_forside p {
     height: 35%;
     display: block;
     margin: 0 auto;
-
 }
 
 #om_mig_map h1 {
@@ -296,8 +327,8 @@ sectionwrapper_forside p {
     color: black;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-
-
+    text-transform: inherit;
+    line-height: 1.5em;
 }
 
 
@@ -322,6 +353,7 @@ sectionwrapper_forside p {
 #sectionwrapper_tekst p {
     font-family: 'Raleway', sans-serif;
     color: black;
+    text-transform: inherit;
 }
 
 /*----------------- CV - OM MIG slut ------------------*/
@@ -333,7 +365,6 @@ sectionwrapper_forside p {
     height: 100%;
     display: block;
     margin: 0 auto;
-
 }
 
 #portfolio_map h1 {
@@ -343,8 +374,6 @@ sectionwrapper_forside p {
 
 #portfolio_map {
     padding: 5px 0px 5px 0px;
-
-
 }
 
 #portfolio_map h3 {
@@ -352,14 +381,11 @@ sectionwrapper_forside p {
     font-size: 1.2em
 }
 
-#portfolio_map h2 {
-    padding: 1vw;
-    color: black;
-}
 
 #portfolio_map p {
     font-family: 'Raleway', sans-serif;
     color: black;
+    text-transform: inherit;
 }
 
 /*---------------------PORTFOLIO OVERSIGT - TEMAER-----------*/
@@ -372,7 +398,6 @@ sectionwrapper_forside p {
 
 #sectionwrapper img {
     width: 80%;
-    height: 80%%;
     display: block;
     margin: 0 auto;
 }
@@ -384,7 +409,7 @@ sectionwrapper_forside p {
 
 #sectionwrapper h3 {
     text-align: center;
-    font-size: 1.2em
+    font-size: 1.2em;
 }
 
 #sectionwrapper h2 {
@@ -395,6 +420,7 @@ sectionwrapper_forside p {
 #sectionwrapper p {
     font-family: 'Raleway', sans-serif;
     color: black;
+    text-transform: inherit;
 }
 
 #sectionwrapper a {
@@ -431,6 +457,9 @@ sectionwrapper_forside p {
 
 }
 
+#portfolio_map h1 {
+    color: white;
+}
 
 
 
@@ -459,11 +488,10 @@ sectionwrapper_forside p {
 #cv h3 {
     /*    text-align: center;*/
     font-size: 1.2em;
-    padding: 0em 1em;
+    padding: 5px 12px;
 }
 
 #cv h2 {
-    /*    padding: 1vw;*/
     color: white;
     text-align: center;
 }
@@ -471,7 +499,8 @@ sectionwrapper_forside p {
 #cv p {
     font-family: 'Raleway', sans-serif;
     color: white;
-    line-height: 1.5em
+    line-height: 1.5em;
+    text-transform: inherit;
 }
 
 #cv {
@@ -494,8 +523,10 @@ sectionwrapper_forside p {
 /*------------- tema 1 - gr html-----------*/
 
 #sectionwrapper_tema_et img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin: 0 auto;
 }
 
 #sectionwrapper_tema_et h1 {
@@ -513,7 +544,13 @@ sectionwrapper_forside p {
     color: red;
 }
 
+#sectionwrapper_tema_et h2 {
+    text-align: center;
+}
 
+#sectionwrapper_tema_et p {
+    text-align: center;
+}
 
 /*----------------tema 2 - animation-------------*/
 
@@ -526,24 +563,29 @@ sectionwrapper_forside p {
 
 .column_sex h1 {
     text-align: center;
-    margin: 5vw;
+    margin: 20px 20px;
 }
 
 .column_sex p {
     color: black;
     font-family: 'Raleway', sans-serif;
+    text-transform: inherit;
+    text-align: center;
 }
 
 .column_sex h2 {
     color: black;
-
 }
+
 
 .column_sex a {
     color: red;
 }
 
+.column_sex h2 {
+    text-align: center;
 
+}
 
 #animation_map {
     background-color: darkgray;
@@ -552,15 +594,17 @@ sectionwrapper_forside p {
 
 #animation_map h1 {
     text-align: center;
-    padding: 1vw;
+    padding: 20px 20px 10px;
 }
 
 #animation_map h2 {
     text-align: center;
-    padding: 1vw;
-    ;
+    padding: 10px;
 }
 
+#animation_map p {
+    text-align: center;
+}
 
 /*----------------tema 2 slut -------------*/
 
@@ -574,16 +618,14 @@ sectionwrapper_forside p {
     display: flex;
     flex-wrap: wrap;
     background-color: darkgrey;
-    padding: 1vw 0vw 1vw 0vw;
+    padding: 5px 20px 1px 0px;
 }
 
 #sectionwrapper_tre p {
     font-family: 'Raleway', sans-serif;
+    text-transform: inherit;
 }
 
-#sectionwrapper_tre h3 {
-    padding: 0vw 2.5vw;
-}
 
 
 #sectionwrapper_tre h1 {
@@ -601,32 +643,12 @@ sectionwrapper_forside p {
 }
 
 
-#sectionwrapper_tre .column_dox {
-    background-color: white;
-    padding: 1vw;
-}
-
-
 #sectionwrapper_tre a {
     color: red;
 }
 
 
-.column_dox h2 {
-    color: black;
-}
 
-.column_dox p {
-    color: black;
-}
-
-.column_dox_video iframe {
-    width: 80vw;
-    height: 45vw;
-    display: block;
-    margin: 0 auto;
-    border: 0;
-}
 
 .column_pilot {
     justify-content: space-between;
@@ -635,24 +657,20 @@ sectionwrapper_forside p {
     width: 10px;
 }
 
-.column_dox {
-    justify-content: space-between;
-    flex-basis: 300px;
-    flex-grow: 1;
-    width: 10px;
-}
 
-
-.video_dox {
-    display: block;
-    margin: 0 auto;
-
-}
 
 .video {
     display: block;
     margin: 0 auto;
 
+}
+
+.column_pilot h2 {
+    text-align: center;
+}
+
+.column_pilot p {
+    text-align: center;
 }
 
 /*-----------------tema 3 slut------------------*/
@@ -686,16 +704,21 @@ sectionwrapper_forside p {
 .sectionwrapper h1 {
     text-align: center;
     color: white;
-    padding: 2vw;
+    padding: 10px 20px;
 }
 
 .sectionwrapper h2 {
     text-align: center;
     color: white;
-    padding: 2vw;
+    padding: 10px 20px 5px;
 }
 
 
 h1 {
     text-align: center;
+}
+
+#ux_map p {
+    text-align: center;
+    padding: 5px 5px 5px 5px;
 }
